@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.5 sec <<< FAILURE! - in TestSuite
+createBCwithFillForm(com.sl.test.TestBroadcastChannel)  Time elapsed: 6.304 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.sl.test.TestBroadcastChannel.createBCwithFillForm(TestBroadcastChannel.java:31)
+
