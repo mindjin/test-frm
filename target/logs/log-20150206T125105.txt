@@ -1,0 +1,12 @@
+12:51:08.316 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver navigated to 'http://10.65.50.157:8081/smarttube/master/adminui4/app/'
+12:51:09.572 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.id: btnSignIn'
+12:51:09.645 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.id: row.login'
+12:51:09.730 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver changed value for element - tag:input id: row.login ('')
+12:51:09.730 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.id: row.login'
+12:51:09.934 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver changed value for element - tag:input id: row.login ('admin')
+12:51:09.934 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.id: row.password'
+12:51:10.032 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver changed value for element - tag:input id: row.password ('')
+12:51:10.032 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.id: row.password'
+12:51:10.153 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver changed value for element - tag:input id: row.password ('admin')
+12:51:10.153 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.id: btnSignIn'
+12:51:10.265 [main] INFO  com.sl.utils.WebDriverLogger - WebDriver find By 'By.selector: [href='BroadcastChannel/list']'

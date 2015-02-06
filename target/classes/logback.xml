@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+ <timeStamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+ <!--<appender name="multiplex" class="de.huxhorn.lilith.logback.appender.ClassicMultiplexSocketAppender">
+	<Compressing>true</Compressing>  will automatically use correct default port
+ 	<ReconnectionDelay>10000</ReconnectionDelay>
+	<IncludeCallerData>true</IncludeCallerData>
+ 	<RemoteHosts>localhost</RemoteHosts>
+ 	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">. <level>ALL</level>. </filter>
+ </appender>-->
+ 
+ <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+	<!--encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"-->
+	<encoder>
+	   <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+	   </encoder>
+	   <filter class="ch.qos.logback.classic.filter.ThresholdFilter"> <level>INFO</level> </filter>
+
+   </appender>
+ 
+ <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+	<file>target/logs/log-${bySecond}.txt</file>
+	<!--encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"-->
+	<encoder>
+	   <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+	</encoder>
+    </appender>
+ 
+  <root level="debug">
+ <!-- <appender-ref ref="multiplex" />-->
+	<appender-ref ref="CONSOLE" />
+	<appender-ref ref="FILE" />
+  </root>
+ 
+</configuration>
